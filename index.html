@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steering shop</title>
+    <script>
+        function increaseQuantity() {
+            var quantityElement = document.getElementById("quantity");
+            var currentQuantity = parseInt(quantityElement.textContent);
+            currentQuantity++;
+            quantityElement.textContent = currentQuantity;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>steering shop</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <article class="product">
+                <img src="product1.jpg" alt="Название товара 1">
+                <h2>скутер vento smart II</h2>
+                <p>Скутер Vento Smart 2 — один из самых больших в модельном ряду Vento.
+                    Брат скутера Vento Smart 1. Характеристики: Объём двигателя — 150 куб (49 по документам).
+                    Двигатель — четырехтактный, одноцилиндровый. Мощность — 10,8 л. С. Короба передач — вариатор.
+                    Система запуска — Кикстартер/электростартер.
+                    Колёса литые — перед 12, зад 12. Тормоза — дисковые/барабанные.
+                    Расход топлива — 3.5 л/100 км.
+                    Грузоподъемность — 150 кг. Бензин — АИ92.</p>
+                <span class="price">$99.99</span>
+
+                <p>Количество: <span id="quantity">1</span></p>
+
+                <button onclick="increaseQuantity()">B корзину</button>
+            </article>
+
+        </section>
+    </main>
+
+    <aside>
+        <img src="./main/ОБОИИИИИИИИИИИИИ.jpg" alt="Дополнительное фото">
+
+        <video controls>
+            <source src="./main/Как я переделал руль.mp4" type="video/mp4">
+        </video>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 steering shop. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
